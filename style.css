@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; /*não calcula a dimensão de um elemento somando bordas e margens com altura e largura*/
+  text-decoration: none; /* definir a formatação de underline */
+}
+
+body {
+  font-size: 100%; /*tamanho padrão*/
+  background-color: black; /*fundo*/
+}
+
+.cabecalho {
+  display: flex; /*flexbox, modelo de layout flexível dentro do seu elemento pai*/
+  flex-direction: row; /*direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+  align-items: center; /*alinhamento dos itens*/
+  justify-content: space-around; /*itens distribuídos ao longo do eixo principal, com base em column ou row*/
+  padding: 24px; /*a distância entre o conteúdo de um elemento e suas bordas*/
+}
+
+.cabecalho-menu {
+  display: flex; 
+  gap: 32px; /*coloca a distancia entre os elementos*/
+}
+
+.cabecalho-menu-item {
+  color: white; /*cor da letra*/
+  font-family:'Lato', sans-serif; 
+  font-weight: 1000; /*peso ou a intensidade da fonte*/
+  font-size: 1.3rem; /*tamanho da fonte*/
+}
+
+
+/*conteúdo principal*/
+
+
+.conteudo {
+  height: 90vh; /*altura do elemento*/
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.conteudo-principal {
+  display: flex; 
+  flex-direction: column; /*direção na qual os elementos flex serão exibidos ao longo do eixo principal, no caso em coluna*/
+  justify-content: center; 
+  align-items: center;
+}
+
+.conteudo-central {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: white; /*cor da letra*/
+  font-size: 3rem; /*tamanho da fonte*/
+  font-family:'Lato', sans-serif
+}
+
+.texttwo {
+  color: white; 
+  font-size: 1.5rem; /*tamanho da fonte*/
+  font-family:'Lato', sans-serif
+}
+
+.button-principal {
+  padding: 10px 8px; /*a distância entre o conteúdo de um elemento e suas bordas*/
+  width: 250px; /*largura da área de conteúdo de um elemento*/
+  color: #fff; 
+  background: black; /*cor de fundo do botão*/
+  border: 1px solid white; /*cor da borda e tamanho*/
+  font-family: 'Lato', sans-serif; /*fonte do texto do botão*/
+  border-radius: 5px; /*arredondamento das bordas*/
+  text-align: center; /*posição do texto no botão*/
+  user-select: none; 
+  cursor: pointer; /*o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+}
+
+.button-principal:hover {
+  background: black; 
+}

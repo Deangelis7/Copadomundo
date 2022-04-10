@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*não calcula a dimensão de um elemento somando bordas e margens com altura e largura*/
+  text-decoration: none; /* definir a formatação de underline */
+}
+
+body {
+  font-size: 100%; /*tamanho padrão*/
+  background-color: white; /*fundo*/
+}
+
+.cabecalho {
+  display: flex;  /*flexbox, modelo de layout flexível dentro do seu elemento pai*/
+  flex-direction: row; /*direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+  align-items: center; /*alinhamento dos itens*/
+  justify-content: space-around; /*itens distribuídos ao longo do eixo principal, com base em column ou row*/
+  padding: 24px; /*a distância entre o conteúdo de um elemento e suas bordas*/
+  background-color: black; /*fundo*/
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px; /*coloca a distancia entre os elementos*/
+}
+
+.cabecalho-menu-item {
+  color: white; /*cor da letra*/
+  font-family:'Lato', sans-serif;
+  font-weight: 1000; /*peso ou a intensidade da fonte*/
+  font-size: 1.3rem; /*tamanho da fonte*/
+}
+
+
+/*conteúdo principal*/
+
+.conteudo {
+  background: white; /*cor de fundo*/
+  text-align: left; /*texto alinhado pela esquerda*/
+  color: black; /*cor do texto*/
+  font-family:'Lato', sans-serif;
+}
+
+.sobre {
+  color: #4b39b5; /*cor do texto, título*/
+  padding-top: 2%;  /*distância do texto em relação ao header, menu*/
+  padding-left: 5%; /*distância do texto em relação ao lado esquerdo de um elemento, margem*/
+  font-size: 1.6rem; /*tamanho da fonte*/
+}
+
+ul {
+  text-align: justify; /*alinhar em ambos lados*/
+  padding-left: 6%; /*distância do texto em relação ao lado esquerdo de um elemento, margem*/
+  padding-right: 5%; /*indica a distância aplicada no lado direito do elemento*/
+  font-size: 1.1rem; /*tamanho da fonte*/
+  font-family:'Lato', sans-serif;
+}
+
+.noticias {
+  color: #4b39b5; /*cor do texto, título*/
+  padding-top: 2%; /*distância do texto em relação ao header, menu*/
+  padding-left: 5%; /*distância do texto em relação ao lado esquerdo de um elemento, margem*/
+  font-size: 1.6rem; /*tamanho da fonte*/
+}
+
+p {
+  text-align: justify; /*alinhar em ambos lados*/
+  padding-left: 5%; /*distância do texto em relação ao lado esquerdo de um elemento, margem*/
+  padding-right: 5%; /*indica a distância aplicada no lado direito do elemento*/
+  font-size: 1.1rem; /*tamanho da fonte*/
+  font-family:'Lato', sans-serif;
+}
+
+
+/*formulário*/
+
+
+form {
+  padding-left: 5%; /*distância do texto em relação ao lado esquerdo de um elemento, margem*/
+  font-size: 0.9rem; /*tamanho da fonte*/
+  color: #4b39b5; /*cor do texto, fonte*/
+  font-family:'Lato', sans-serif; 
+}
